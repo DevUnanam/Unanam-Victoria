@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #6A4A3C; /* Vineyard brown */
+    --secondary-color: #8B5E4D;
+    --background-color: #F5EDE1;
+    --text-color: #2E1D18;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills-container div {
+    flex: 1 1 45%;
+    margin: 0.5rem 0;
+}
+
+.projects-carousel {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    flex: 1;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.project-card {
+    flex: 0 0 300px;
+    margin: 0.5rem;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .project-card {
+        flex: 0 0 200px;
+    }
+}
+
+.contact-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.contact-icons a {
+    font-size: 2rem;
+    color: #6A4A3C; /* Vineyard brown */
+    text-decoration: none;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.contact-icons a:hover {
+    color: #8B5E4D;
+    transform: scale(1.1);
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skills-list li {
+    font-size: 2rem;
+    color: #6A4A3C; /* Vineyard brown */
+    transition: transform 0.2s, color 0.2s;
+}
+
+.skills-list li:hover {
+    color: #8B5E4D; /* Lighter brown */
+    transform: scale(1.2);
+}
+
+.project-card {
+    text-decoration: none;
+    color: inherit; /* Keeps the text color consistent */
+    display: block; /* Ensures the whole card is clickable */
+    padding: 1rem;
+    background-color: #f5f5f5; /* Example background */
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
